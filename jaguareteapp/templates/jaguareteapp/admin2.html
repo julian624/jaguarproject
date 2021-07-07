@@ -1,0 +1,27 @@
+{% extends "jaguareteapp/index.html" %}
+
+{% load static %}
+{% block content%}
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+
+<div class="agregarproductocontainer">
+  <div class="agregarproductocontent">
+    <h4>Bienvenido, si estas en esta seccion significa que sos el administrador de la pagina, Ingresando al boton de administrador encontraras esta columna en las cuales podras ver tus ordenes de envios, productos, usuarios y modificar todo de forma dinamica</h4>
+    <div class="contenedorimagenes">
+      <img src="{% static "images/admin1.jpg" %}" alt="" class=""> 
+      
+    </div>
+    <div class="botonadministrador">
+      <a href="/admin">ADMINISTRADOR</a>
+      </div>
+   </div>
+
+    
+
+
+</div>
+  
+
+{% endblock %}
