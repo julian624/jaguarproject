@@ -1,0 +1,44 @@
+{% extends "jaguareteapp/index.html" %}
+
+{% block content %}
+{% load static %}
+
+<div class="videocontainer">
+    <video autoplay loop muted >
+        <source src="{% static "videojaguar.mp4" %}" type="video/mp4" />
+    </video>
+    <div class="videocontent">
+        <h1 class="homeh1">_____________</h1>
+        <h1 class="homeh1"> JAGUARETE KAA</h1>
+        <br>
+        <h3 class="homeh3">Bienvenidos a nuestra tienda! te ofrecemos los mejores precios en los mejores articulos importados de basket </h3>
+         <h5 class=homeh5>Te ofrecemos nuestros productos de remeras y el mes que viene inaguramos nuestras ZAPATILLAS!</h6>
+        <br>
+        <div class="productosbotones">
+           <h4><a class="homebotonesjs" href="{% url 'productos' %}">ZAPATILLAS</a></h4>
+           <h4><a class="homebotonesjs" href="{% url 'store' %}">REMERAS</a></h4>
+            <hr>
+        
+        </div>
+        <script>
+            window.sr = ScrollReveal({
+              distance: '20px',
+              origin: 'bottom',
+              duration: 2000,
+              easing: 'ease',
+              mobile: true,
+              reset: true,
+              viewFactor: 0.6,});
+          </script>
+        <script>
+            ScrollReveal().reveal('.homeh1', { delay: 300 })
+            ScrollReveal().reveal('.homeh3', { delay: 1000 })
+            ScrollReveal().reveal('.homeh5', { delay: 2000 })
+            ScrollReveal().reveal('.homebotonesjs', { delay: 2500 })
+        </script>
+        
+    </div>
+</div>
+
+{% endblock %}
+
