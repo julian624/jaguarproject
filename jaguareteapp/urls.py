@@ -6,7 +6,7 @@ from . import views
 from django.contrib import admin
 
 urlpatterns = [
-    path('', views.index, name='index'),
+    path('', views.home, name='home'),
     path('productos/', views.productos, name='productos'),
     path('nosotros/', views.nosotros, name='nosotros'),
     path('home/', views.home, name='home'),
@@ -21,6 +21,4 @@ urlpatterns = [
 	path('update_item/', views.updateItem, name="update_item"),
 	path('process_order/', views.processOrder, name="process_order"),
 	
-  
-    
 ]
