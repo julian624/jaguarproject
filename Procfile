@@ -1,2 +1,2 @@
 web: gunicorn gettingstarted.wsgi
-web: gunicorn app:jaguarproyect
+web: gunicorn application:jaguarproyect
