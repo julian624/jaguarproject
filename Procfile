@@ -1,2 +1,1 @@
-web: gunicorn gettingstarted.wsgi
-web: gunicorn application:jaguarproyect
+gunicorn myproject.wsgiweb: gunicorn jaguarproyect.wsgi --log-file -
